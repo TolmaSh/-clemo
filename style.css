@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: montserrat;
+  font-family: montserrat, serif;
 }
 .container {
   margin-left: auto;
@@ -24,6 +24,10 @@
   text-decoration: none;
 }
 /* HEADER */
+.header {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -154,9 +158,7 @@
   width: 50px;
   height: 2px;
   background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
 }
 
 .service-title--aboutus {
@@ -205,11 +207,23 @@
   flex-direction: column-reverse;
 }
 .gallery-img-short {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #989898;
   width: 364px;
   height: 364px;
   background-color: grey;
 }
 .gallery-img-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #989898;
   width: 364px;
   height: 590px;
   background-color: lightgrey;
@@ -310,9 +324,15 @@
   margin-top: 80px;
 }
 .blog-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 266px;
   height: 140px;
-  background-color: lightgray;
+  font-size: 14px;
+  font-weight: 400;
+  color: #989898;
+  background-color: #e6e6e6;
 }
 
 /* FOOTER */
@@ -417,17 +437,15 @@
   font-weight: 700;
 }
 
-/* --------- ABOUTS US PAGE   ------- */
+/* --------- ABOUTS US PAGE / SERVICES PAGE   ------- */
 /*HEADER*/
-.header_aboutus {
-  padding-top: 60px;
-  padding-bottom: 50px;
+.header_pages {
   border-bottom: 1px solid #d8d8d8;;
 }
 
 /*SERVICES*/
 
-.services--aboutus {
+.services--page {
   border-bottom: 1px solid #d8d8d8;;
 }
 /* STATS */
@@ -481,4 +499,47 @@
   height: 268px;
   background-color: #e6e6e6;
   color: #989898;
+}
+/*PRICE*/
+.price {
+  background-color: black;
+  color: #fff;
+}
+.price_wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.price_text {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 42px;
+}
+.price_line {
+  display: inline-block;
+  height: 2px;
+  width: 55px;
+  background-color: #fff;
+}
+.price_cost {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+}
+.price_event {
+  color: #8e8e8e;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 42px;
+}
+.price_btn {
+  margin-left: 70px;
+  margin-top: 0;
+  color: black;
+  background-color: white;
+}
+.price_btn:hover,
+.price_btn:focus {
+  background-color: #ffe1bd;
 }
