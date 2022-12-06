@@ -11,6 +11,12 @@
   padding-right: 15px;
   width: 1200px;
 }
+.centered-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .list {
   list-style: none;
 }
@@ -119,6 +125,11 @@
   flex-direction: row-reverse;
 }
 .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #9a9a9a;
   width: 560px;
   height: 560px;
   background-color: #e5e5e5;
@@ -145,6 +156,17 @@
   background-color: black;
   position: absolute;
   bottom: 0;
+  left: 0;
+}
+
+.service-title--aboutus {
+  margin-left: 70px;
+  margin-top: 50px;
+  padding-top: 45px;
+}
+.service-title--aboutus::before {
+
+  top: 0;
   left: 0;
 }
 .service-text {
@@ -212,13 +234,19 @@
   text-align: center;
 }
 .team-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   border-radius: 50%;
   width: 168px;
   height: 168px;
+  font-size: 14px;
+  color: #989898;
   background-color: white;
+
 }
 .team-name {
   position: relative;
@@ -387,4 +415,70 @@
   margin-bottom: 4px;
   font-size: 20px;
   font-weight: 700;
+}
+
+/* --------- ABOUTS US PAGE   ------- */
+/*HEADER*/
+.header_aboutus {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d8d8d8;;
+}
+
+/*SERVICES*/
+
+.services--aboutus {
+  border-bottom: 1px solid #d8d8d8;;
+}
+/* STATS */
+
+.stats_wrapper {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.stats_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+}
+.stats_num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+}
+.stats_num::after {
+  content: '';
+  width: 55px;
+  height: 2px;
+  background-color: #000000;
+  display: inline-block;
+}
+.stats_title {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: center;
+}
+/* instagram */
+.instagram_wrapper {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.instagram_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 268px;
+  height: 268px;
+  background-color: #e6e6e6;
+  color: #989898;
 }
